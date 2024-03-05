@@ -1,0 +1,47 @@
+/* #region Main Styling */
+header{
+    display: flex;
+    padding: 1rem 2vw;
+    align-items: flex-end;
+    background-image: url(Images/bread.webp);
+    background-size: cover;
+    background-position: 40, 100;
+} 
+
+header>div{
+    padding-left: 2vw;
+}
+
+nav{
+    border-top: solid;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav>ul>li{
+    border: dashed;
+    text-align: center;
+}
+
+nav>li>a {
+    text-decoration: none;
+    color: black;
+}
+/* #endregion */
+
+/* #region Mobile Styling */
+
+@media screen and (max-width: 600px) { 
+    
+    nav>ul {
+        display: block;
+    }
+
+}
+
+/* #endregion */
