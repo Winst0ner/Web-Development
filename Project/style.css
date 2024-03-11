@@ -49,7 +49,7 @@ h1 {
     font-size: 2rem;
 }
 
-h2 {
+h3 {
     font-weight: 200;
     font-size: 1.7rem;
 }
@@ -60,12 +60,23 @@ p {
 }
 
 dl {
-    background-color: gray;
+    
 }
 
 dl>dt {
     color: blue;
 }
 
+footer>ol {
+    list-style-type: none;
+}
+
+footer>ol>li {
+    
+}
+
+div.home {
+    float: right;
+}
 
 
