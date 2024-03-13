@@ -67,6 +67,10 @@ dl>dt {
     color: blue;
 }
 
+footer {
+    clear: both;
+}
+
 footer>ol {
     list-style-type: none;
 }
@@ -77,6 +81,11 @@ footer>ol>li {
 
 div.home {
     float: right;
+}
+
+div.pictures {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
