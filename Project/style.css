@@ -8,10 +8,13 @@ body {
 
 }
 
+/* Header stuff here*/
 header {
     
 }
 
+
+/* Nav stuff here */
 nav {
     
 }
@@ -40,6 +43,7 @@ nav>ul>li>a:hover {
 
 }
 
+/* Main stuff here */
 main {
     
 }
@@ -67,18 +71,6 @@ dl>dt {
     color: blue;
 }
 
-footer {
-    clear: both;
-}
-
-footer>ol {
-    list-style-type: none;
-}
-
-footer>ol>li {
-    
-}
-
 div.home {
     float: right;
 }
@@ -92,5 +84,79 @@ div.pictures {
     display: flex;
     flex-wrap: wrap;
 }
+
+.giveaway fieldset {
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.giveaway legend {
+    color: #000;
+}
+
+.giveaway label {
+    margin: .5rem;
+}
+
+.giveaway label, .giveaway textarea, .giveaway select, .giveaway [type=text]
+, .giveaway [type=email], .giveaway [type=tel] {
+    display: block;
+}
+
+.giveaway textarea, .giveaway select, .giveaway [type=text]
+, .giveaway [type=email], .giveaway [type=tel] {
+    border: solid 1px #000;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+}
+
+.giveaway textarea {
+    height: 6rem;
+}
+
+.giveaway textarea, .giveaway [type=text], .giveaway [type=email]
+, .giveaway [type=tel] {
+    background-color: rgba(0, 50, 80, .15);
+    color: #000;
+}
+
+.giveaway [type=submit] {
+    background-color: #373737;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin: 1rem 0 1rem 1vw;
+}
+
+
+
+
+
+
+/* Footer stuff here */
+footer {
+    border-top: solid #000 1px;
+    text-align: center;
+    color: #000;
+    padding: 1rem 0;
+    clear: both;
+}
+
+footer>ol, footer>ul {
+    list-style-type: none;
+}
+
+footer>ol>li {
+    
+}
+
+footer>p {
+    
+}
+
+
 
 
