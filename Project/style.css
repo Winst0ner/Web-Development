@@ -1,3 +1,7 @@
+/* prevent problems with diffrent browsers */
+* {box-sizing: border-box;}
+
+
 body {
     font-family: "Roboto", sans-serif;
     padding: 1rem 2vw;
@@ -15,33 +19,66 @@ header {
 
 
 /* Nav stuff here */
-nav {
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #000;
+        color: blue;
+    }
     
-}
+    nav .active a {
+        background-color: #373737;
+        color: white;
+    }
 
-/* Gets rid of bullet points in nav */
-nav>ul {
-    display: flex;
-    height: 48px;
-    list-style-type: none;
+} /* end of the media query */
+
+@media only screen and (min-width: 601px) {
     
+    nav {
     
-}
-
-nav>ul>li {
+    }
     
-}
+    /* Gets rid of bullet points in nav */
+    nav>ul {
+        display: flex;
+        height: 48px;
+        list-style-type: none;
+        
+        
+    }
+    
+    nav>ul>li {
+        
+    }
+    
+    nav>ul>li>a {
+        text-decoration: none;
+        color: black;
+        padding: .8cm;
+    }
+    
+    nav>ul>li>a:hover {
+        background-color: rgb(146, 255, 255);
+    
+    }
+} /* end of the media query */
 
-nav>ul>li>a {
-    text-decoration: none;
-    color: black;
-    padding: .8cm;
-}
 
-nav>ul>li>a:hover {
-    background-color: rgb(146, 255, 255);
 
-}
+
 
 /* Main stuff here */
 main {
@@ -155,6 +192,12 @@ footer>ol>li {
 
 footer>p {
     
+}
+
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
 }
 
 
