@@ -14,7 +14,7 @@ body {
 
 /* Header stuff here*/
 header {
-    
+    text-align: center;
 }
 
 
@@ -34,7 +34,7 @@ header {
         font-weight: 700;
         text-transform: uppercase;
         text-align: center;
-        border-bottom: solid 1px #000;
+        
         color: blue;
     }
     
@@ -48,20 +48,23 @@ header {
 @media only screen and (min-width: 601px) {
     
     nav {
-    
+       
     }
     
     /* Gets rid of bullet points in nav */
     nav>ul {
         display: flex;
+        justify-content: center;
+        max-width: 70rem;
+        margin: 0 auto;
         height: 48px;
         list-style-type: none;
-        
+        padding-left: 0;
         
     }
     
     nav>ul>li {
-        
+        font-size: 92%;
     }
     
     nav>ul>li>a {
@@ -88,24 +91,70 @@ main {
 h1 {
     font-weight: 700;
     font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 h3 {
     font-weight: 200;
     font-size: 1.7rem;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
 }
 
 p {
     margin: 0 0 .3rem 0;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 dl {
-    
+    text-align: center;
 }
 
 dl>dt {
     color: blue;
+}
+
+main a {
+    display: block;
+    text-align: center;
+}
+
+audio {
+    margin: 0 auto;
+    display: block;
+}
+
+main table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;   
+}
+
+main table th {
+    background-color: rgba(48, 48, 255, 0.842);
+    color: white;
+    padding: .5rem 2vw;
+}
+
+main table td {
+    color: purple;
+    padding: .4rem 2vw;
+}
+
+main table tr:nth-child(odd) {
+    background-color: gainsboro;
+}
+
+main table tr:hover {
+    background-color: rgb(146, 255, 255);
 }
 
 div.home {
@@ -117,9 +166,19 @@ div.home img {
     height: auto;
 }
 
+div.home figcaption {
+    text-align: center;
+}
+
 div.pictures {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.pictures figcaption {
+    text-align: center;
 }
 
 .giveaway fieldset {
@@ -168,6 +227,10 @@ div.pictures {
     margin: 1rem 0 1rem 1vw;
 }
 
+address {
+    text-align: center;
+}
+
 
 
 
@@ -195,7 +258,7 @@ footer>p {
 }
 
 
-header, nav, main, footer {
+header, main, footer {
     max-width: 64rem;
     margin: 0 auto;
 }
