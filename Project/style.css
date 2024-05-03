@@ -17,6 +17,15 @@ header {
     text-align: center;
 }
 
+nav {
+    height: 100%;
+    background-image: url("hero2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: white;
+}
+
 
 /* Nav stuff here */
 
@@ -69,12 +78,12 @@ header {
     
     nav>ul>li>a {
         text-decoration: none;
-        color: black;
+        color: white;
         padding: .8cm;
     }
     
     nav>ul>li>a:hover {
-        background-color: rgb(146, 255, 255);
+        background-color: rgb(0, 68, 255);
     
     }
 } /* end of the media query */
